@@ -1,32 +1,39 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app class="checking">
+    <v-main>
+      <v-container>
+        <router-view />
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
+<script>
+export default {
+  name: "App",
+  components: {}
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@font-face {
+  font-family: Metropolis;
+  src: url("./assets/Metropolis/Metropolis-Regular.otf") format("otf");
+}
+.v-application {
+  /* background-color: #f0f0f0 !important; */
+  font-family: "Metropolis";
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.checking {
+  background-color: gray;
+  background-position: top -110px right -110px, bottom 120px left -80px,
+    top 30% left 120px, bottom 220px right -50px, bottom 450px right 100px !important;
+  background-repeat: no-repeat !important;
+  background-image: url("./assets/Images/Illustration2.png"),
+    url("./assets/Images/Illustration1.png"),
+    url("./assets/Images/Illustration3.png"),
+    url("./assets/Images/Illustration4.png"),
+    url("./assets/Images/Illustration5.png") !important;
 }
 </style>
