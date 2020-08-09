@@ -1,4 +1,7 @@
 # contest_project
+This website will list food products. User can search for a particular food item using the search. User
+can view the details of particular product in two ways. On hovering an item, it will show two way to view the product.On clicking the quick view pop up will appear and on clicking outside of the pop up will disapper.
+More View user can view the product details in separate page.
 
 ## Project setup
 ```
@@ -10,21 +13,4 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
